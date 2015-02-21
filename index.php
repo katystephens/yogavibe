@@ -5,7 +5,7 @@ require_once('mysql.php');
 
 <div id="welcome">
 	<div id="get-started">
-		<p>Online/offline yoga sequence builder.<br> 
+		<p>Online yoga sequence builder.<br> 
 		Customize your yoga to fit your needs.</p>
 		<p>$10 a month. 30 day free trial.</p>
 		<p><a class="btn-medium btn-blue" href="new.php">Get Started Now</a></p>
