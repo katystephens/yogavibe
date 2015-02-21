@@ -1,0 +1,1 @@
+<h1>Welcome, <?= $_SESSION['first_name'] ?></h1>
