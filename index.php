@@ -1,7 +1,6 @@
 <?php 
 require_once('header.php'); 
 require_once('mysql.php'); 
-echo 5/0;
 ?>
 
 <div id="welcome">
