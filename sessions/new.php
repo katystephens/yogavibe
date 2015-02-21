@@ -10,4 +10,4 @@
 		<input type="submit" class="button" value="Sign In">
 	</form>
 
-<?php require_once('footer.php') ?>
+<?php require_once('../footer.php') ?>

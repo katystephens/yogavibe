@@ -1,5 +1,7 @@
-<?php require_once('header.php'); ?>
-<?php require_once('mysql.php'); ?>
+<?php 
+require_once('header.php'); 
+require_once('mysql.php'); 
+?>
 
 <div id="welcome">
 	<div id="get-started">
@@ -24,5 +26,4 @@
 
 </div>
 
-
-<?php require_once("ffooter.php"); ?>
+<?php require_once("footer.php"); ?>

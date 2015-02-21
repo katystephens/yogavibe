@@ -8,6 +8,12 @@ $lname = mysqli_real_escape_string($conn, $_POST['last_name']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = $_POST['password'];
 
+/**
+ * TODO: 
+ * password_confirm was undefined
+ */
+$password_confirm = $password;
+
 $errors = [];
 
 if (strlen($fname) == 0) {
@@ -70,10 +76,10 @@ $form_valid = count($errors) == 0;
 	<li><?= $error ?></li>
 <?php endforeach ?>
 </ul>
-<?php require_once('new.php'); ?>
+<?php require_once('../new.php'); ?>
 <?php endif ?>
 
-<?php require_once('footer.php') ?>
+<?php require_once('../footer.php') ?>
 
 
 

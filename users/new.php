@@ -16,4 +16,4 @@
 		<input type="submit" class="button" value="Create Account">
 	</form>
 
-<?php require_once('ffooter.php') ?>
+<?php require_once('../footer.php') ?>

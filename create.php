@@ -8,6 +8,12 @@ $lname = mysqli_real_escape_string($conn, $_POST['last_name']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = $_POST['password'];
 
+/**
+ * TODO: 
+ * password_confirm was undefined
+ */
+$password_confirm = $password;
+
 if (strlen($fname) == 0) {
 	$form_valid = false;
  //no email:
@@ -51,7 +57,7 @@ if (strlen($fname) == 0) {
 
 <?php else: ?>
 <h1>There was an error</h1>
-<?php require_once('new.php'); ?>
+<?php require_once(dirname(__DIR__).'/new.php'); ?>
 <?php endif ?>
 
-<?php require_once('footer.php') ?>
+<?php require_once(dirname(__DIR__).'/footer.php') ?>
