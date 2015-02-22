@@ -1,12 +1,24 @@
 YOGAVIBE
 
---- Update Server
+## Update Server
 
-1. save changes
+* Add New Files if new files have been created
+
+```git add -A```
+
+* Save changes to files
+
 ```git commit -am 'message'```
 
-2. push to github
+* push to github
+
 ```git push origin master```
 
-3. push to web server
+* push to web server
+
 ```git push web master```
+
+* other useful comands
+
+```git status```
+
