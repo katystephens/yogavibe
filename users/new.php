@@ -1,4 +1,12 @@
-<?php require_once('../header.php') ?>
+<?php 
+
+require_once('../header.php');
+
+$first_name = isset($_POST['first_name']) ? $_POST['first_name'] : '';
+$last_name = isset($_POST['last_name']) ? $_POST['last_name'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+
+?>
 
 	<form method="post" action="create.php" id="form">
 		<p>
@@ -16,4 +24,4 @@
 		<input type="submit" class="button" value="Create Account">
 	</form>
 
-<?php require_once('../footer.php') ?>
+<?php //require_once('../footer.php') ?>

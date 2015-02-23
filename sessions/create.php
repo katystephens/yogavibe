@@ -31,7 +31,7 @@ if ($row) {
 ?>
 
 <?php if ($success): ?>
-<h1>Signed In</h1>
+<?php header("Location: /dashboard/index.php"); ?>
 
 
 <?php else: ?>

@@ -33,31 +33,38 @@ if (strlen($fname) == 0) {
 
 <?php if ($form_valid): ?>
 
-<h1>User Created!</h1>
+	<h1>User Created!</h1>
 
-<p>
-	<strong>First Name:</strong><br>
-	<?= $_POST['first_name'] ?>
-</p>
+	<p>
+		<strong>First Name:</strong><br>
+		<?= $_POST['first_name'] ?>
+	</p>
 
-<p>
-	<strong>Last Name:</strong><br>
-	<?= $_POST['last_name'] ?>
-</p>
+	<p>
+		<strong>Last Name:</strong><br>
+		<?= $_POST['last_name'] ?>
+	</p>
 
-<p>
-	<strong>Email:</strong><br>
-	<?= $_POST['email'] ?>
-</p>
+	<p>
+		<strong>Email:</strong><br>
+		<?= $_POST['email'] ?>
+	</p>
 
-<p>
-	<strong>Password:</strong><br>
-	<?= $_POST['password'] ?>
-</p>
+	<p>
+		<strong>Password:</strong><br>
+		<?= $_POST['password'] ?>
+	</p>
 
 <?php else: ?>
-<h1>There was an error</h1>
-<?php require_once(dirname(__DIR__).'/new.php'); ?>
+
+	<h1>There was an error</h1>
+	<?php require_once('/new.php'); ?>
+
 <?php endif ?>
 
-<?php require_once(dirname(__DIR__).'/footer.php') ?>
+<?php require_once('/footer.php') ?>
+
+
+
+
+

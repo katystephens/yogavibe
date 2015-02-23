@@ -12,7 +12,7 @@ $password = $_POST['password'];
  * TODO: 
  * password_confirm was undefined
  */
-$password_confirm = $password;
+// $password_confirm = $password;
 
 $errors = [];
 
@@ -25,58 +25,68 @@ if (strlen($email) == 0){
 if (strlen($password) == 0){
 	$errors[] = "Please enter your password";
 } 
-if (strlen($password_confirm) == 0){
-	$errors[] = "Please confirm your password";
-} 
-if ($password != $password_confirm){
-	$errors[] = "Your passwords do not match";
-} 
+// if (strlen($password_confirm) == 0){
+// 	$errors[] = "Please confirm your password";
+// } 
+// if ($password != $password_confirm){
+// 	$errors[] = "Your passwords do not match";
+// } 
 
 $form_valid = count($errors) == 0;
 
 if ($form_valid) {
 	$encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+
 	mysqli_query($conn, "INSERT INTO users (firstname, lastname, email, password) VALUES ('$fname', '$lname', '$email', '$encrypted_password')");
-	$errors[] = mysqli_error($conn);
+	
+	$error = mysqli_error($conn);
+
+	if($error !== '')
+	{
+		$errors[] = $error;
+	}
 }
 
-$form_valid = count($errors) == 0;
+$mysql_valid = count($errors) == 0;
+
+var_dump($errors);
 
 ?>
 
-<?php if ($form_valid): ?>
+<?php if ($form_valid && $mysql_valid): ?>
 
-<h1>User Created!</h1>
+	<h1>User Created!</h1>
 
-<p>
-	<strong>First Name:</strong><br>
-	<?= $_POST['first_name'] ?>
-</p>
+	<p>
+		<strong>First Name:</strong><br>
+		<?= $_POST['first_name'] ?>
+	</p>
 
-<p>
-	<strong>Last Name:</strong><br>
-	<?= $_POST['last_name'] ?>
-</p>
+	<p>
+		<strong>Last Name:</strong><br>
+		<?= $_POST['last_name'] ?>
+	</p>
 
-<p>
-	<strong>Email:</strong><br>
-	<?= $_POST['email'] ?>
-</p>
+	<p>
+		<strong>Email:</strong><br>
+		<?= $_POST['email'] ?>
+	</p>
 
-<p>
-	<strong>Password:</strong><br>
-	<?= $_POST['password'] ?>
-</p>
+	<p>
+		<strong>Password:</strong><br>
+		<?= $_POST['password'] ?>
+	</p>
 
 <?php else: ?>
 
-<h1>There was an error</h1>
-<ul>
-<?php foreach($errors as $error): ?>
-	<li><?= $error ?></li>
-<?php endforeach ?>
-</ul>
-<?php require_once('../new.php'); ?>
+	<h1>There was an error</h1>
+	<ul>
+		<?php foreach($errors as $error): ?>
+			<li><?= $error ?></li>
+		<?php endforeach ?>
+	</ul>
+	<?php require_once('new.php'); ?>
+
 <?php endif ?>
 
 <?php require_once('../footer.php') ?>

@@ -54,6 +54,13 @@ a {
 	padding: 25px 0 0 10px;
 }
 
+#nav-bar p{
+	font-size: 20px;
+	color: #fff;
+	position: absolute;
+	top: 2%;
+	right: 15%;
+}
 
 #nav-bar li{
 	width: 120px;

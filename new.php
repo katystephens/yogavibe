@@ -2,10 +2,6 @@
 
 require_once('header.php'); 
 
-$first_name = $_GET['first_name'];
-$last_name = $_GET['last_name'];
-$email = $_GET['email'];
-
 ?>
 
 	<form method="post" action="create.php" id="form">
