@@ -55,27 +55,7 @@ var_dump($errors);
 
 <?php if ($form_valid && $mysql_valid): ?>
 
-	<h1>User Created!</h1>
-
-	<p>
-		<strong>First Name:</strong><br>
-		<?= $_POST['first_name'] ?>
-	</p>
-
-	<p>
-		<strong>Last Name:</strong><br>
-		<?= $_POST['last_name'] ?>
-	</p>
-
-	<p>
-		<strong>Email:</strong><br>
-		<?= $_POST['email'] ?>
-	</p>
-
-	<p>
-		<strong>Password:</strong><br>
-		<?= $_POST['password'] ?>
-	</p>
+<?php header("Location: /dashboard/index.php"); ?>
 
 <?php else: ?>
 

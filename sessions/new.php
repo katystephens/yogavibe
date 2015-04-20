@@ -2,7 +2,7 @@
 
 <div class="gray-background">
 	<div class="forms">
-		<a href="/index.php"><center><img width="200px" src="/css/logo-onwhite-large.png"></a></center>
+		<a href="/index.php"><center><img src="/css/logo.png"></a></center>
 		<form method="post" action="create.php">
 			<p>
 				<input type="text" name="email" id="email" class="input" placeholder="Email">

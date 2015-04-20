@@ -15,16 +15,17 @@
 
 		<div id="main-container3">
 			<div id="main-nav">
-				<div class="left-item"><a href="/dashboard/index.php">Custom Classes</a></div>
-				<div class="center-item"><a id="build-classes" href="/dashboard/build-your-own.php">Build Your Own</a></div>
-				<div class="right-item main-active"><a id="scheduled-classes" href="/dashboard/schedule.php">Scheduled Classes</a></div>
+				<div><a href="/dashboard/index.php">Custom Classes</a></div>
+				<div><a id="build-classes" href="/dashboard/build-your-own.php">Build Your Own</a></div>
+				<div class="main-active"><a id="scheduled-classes" href="/dashboard/schedule.php">Scheduled Classes</a></div>
 			</div>
 
 			<div id="schedule-view">
 				<div id="header">
+					<div id="right-arrow"><img width="30px" src="/css/right-arrow.png"></div>
 					<div id="left-arrow"><img width="30px" src="/css/left-arrow.png"></div>
 						<div id="month"></div>
-					<div id="right-arrow"><img width="30px" src="/css/right-arrow.png"></div>
+
 <!-- 					<div id="calendar" class="toggles active">Calendar</div>
 					<div id="eventList" class="toggles normal">Event List</div> -->
 				</div>

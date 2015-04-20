@@ -22,9 +22,9 @@ $permission = $user['permission'];
 
 		<div id="main-container3">
 			<div id="main-nav">
-				<div class="left-item"><a href="/dashboard/index.php">Custom Classes</a></div>
-				<div class="center-item main-active"><a id="build-classes" href="/dashboard/build-your-own.php">Build Your Own</a></div>
-				<div class="right-item"><a id="scheduled-classes" href="/dashboard/schedule.php">Scheduled Classes</a></div>
+				<div><a href="/dashboard/index.php">Custom Classes</a></div>
+				<div class="main-active"><a id="build-classes" href="/dashboard/build-your-own.php">Build Your Own</a></div>
+				<div><a id="scheduled-classes" href="/dashboard/schedule.php">Scheduled Classes</a></div>
 			</div>
 
 			<div id="class-options">

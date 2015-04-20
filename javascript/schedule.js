@@ -172,9 +172,9 @@ var CreateCalendarViewTable = function (y, m, d)
 					var d2d = days;
 				}
 				id = String(y) + String(m2d)  + String(d2d); // this is creating a new id
-				mystring += '<td class="eventadding" onclick="PopEventWindow('+id+')"><div class="days">' + days + '</div><div></div></td>';
+				mystring += '<td class="eventadding"><div class="days">' + days + '</div><div></div></td>';
 				
-				
+				// onclick="PopEventWindow('+id+')" ** this is to add events to calendar, but it after eventadding in td class above
 				days+=1;
 			}
 		}

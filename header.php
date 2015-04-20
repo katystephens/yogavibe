@@ -2,6 +2,14 @@
 
 session_start();
 
+$logout = '';
+
+if(!isset($_SESSION['user_id'])) 
+{
+	$logout = 'logout';
+}
+	
+
 ?>
 
 
@@ -14,4 +22,4 @@ session_start();
 	<script type="text/javascript" src="/javascript/yogavibe.js"></script>
 	<script type="text/javascript" src="/javascript/schedule.js"></script>
 </head>
-<body>
+<body class="<?= $logout ?>">

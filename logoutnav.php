@@ -10,8 +10,7 @@
 
 	<p>Welcome Back, <?= $first_name ?></p>
 
-				<a href="#"><img id="hamburger" src="/css/hamburger.png"></a>
-				<img id="logo" width="150px" src="/css/logo-onwhite.png">
+				<img id="logo" width="150px" src="/css/logo-type.png">
 				<ul id="logout">
 					<li><a href="/logout.php">Logout</a></li>
 				</ul>

@@ -5,7 +5,8 @@
 <div id="main-background">	
 	<?php
 		if(isset($_SESSION['user_id'])) {
-			require_once('logoutnav.php');
+			//require_once('logoutnav.php');
+			header('Location: dashboard/index.php');
 		} else {
 			require_once('login.php');
 		}
