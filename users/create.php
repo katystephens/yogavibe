@@ -17,20 +17,20 @@ $password = $_POST['password'];
 $errors = [];
 
 if (strlen($fname) == 0) {
-	$errors[] = "Please enter your name";
+	$errors[] = "Please enter your first name";
 }
+
+if (strlen($lname) == 0) {
+	$errors[] = "Please enter your last name";
+}
+
 if (strlen($email) == 0){
 	$errors[] = "Please enter your email";
 } 
+
 if (strlen($password) == 0){
 	$errors[] = "Please enter your password";
 } 
-// if (strlen($password_confirm) == 0){
-// 	$errors[] = "Please confirm your password";
-// } 
-// if ($password != $password_confirm){
-// 	$errors[] = "Your passwords do not match";
-// } 
 
 $form_valid = count($errors) == 0;
 
@@ -49,7 +49,7 @@ if ($form_valid) {
 
 $mysql_valid = count($errors) == 0;
 
-var_dump($errors);
+// var_dump($errors);
 
 ?>
 
@@ -59,12 +59,15 @@ var_dump($errors);
 
 <?php else: ?>
 
-	<h1>There was an error</h1>
-	<ul>
-		<?php foreach($errors as $error): ?>
-			<li><?= $error ?></li>
-		<?php endforeach ?>
-	</ul>
+	<div id="error-box">
+		<center>
+			<ul>
+				<?php foreach($errors as $error): ?>
+					<li><?= $error ?></li>
+				<?php endforeach ?>
+			</ul>
+		</center>
+	</div>
 	<?php require_once('new.php'); ?>
 
 <?php endif ?>

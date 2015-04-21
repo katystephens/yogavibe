@@ -45,17 +45,17 @@ $permission = $user['permission'];
 					<p class="float-left">Duration:&nbsp; 0:00</p>
 				</div>
 			</div>
-			<div class="all-build" id="build-standing">
+			<div class="all-build">
 				<div class="build-title"><p>Standing</p></div>
-				<div class="build-area"></div>
+				<div class="build-area" id="build-standing"></div>
 			</div>
-			<div class="all-build" id="build-ground">
+			<div class="all-build">
 				<div class="build-title"><p>Ground</p></div>
-				<div class="build-area"></div>
+				<div class="build-area" id="build-ground"></div>
 			</div>
-			<div class="all-build" id="build-sequence">
+			<div class="all-build add-space">
 				<div class="build-title"><p>Your Sequence</p></div>
-				<div class="build-area"></div>
+				<div class="build-area" id="build-sequence"></div>
 			</div>
 		</div>
 	</div>
