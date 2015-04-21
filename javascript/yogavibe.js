@@ -16,11 +16,28 @@ $(document).ready(function() {
       $("#build-standing").append(standing);
       $("#build-ground").append(ground);
 
+      $("#play-sequence").click(function () {
+            $("#dialog").dialog({
+                  height: 600,
+                  width: 600,
+                  modal: true,
+                  resizable: true,
+                  dialogClass: 'video-dialog'
+            });
+            playSequence(event);
+            console.log('hi');
+      });
+
 
       buildSequence = function (evt) {
       	var img = $(evt.target);
       	sequence.push(img);
 		img.clone().appendTo("#build-sequence");
+      }
+
+      playSequence = function (evt) {
+            var el = $(evt.target);
+            console.log('hello');
       }
 });
 

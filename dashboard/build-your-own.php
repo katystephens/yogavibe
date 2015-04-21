@@ -28,7 +28,7 @@ $permission = $user['permission'];
 			</div>
 
 			<div id="class-options">
-				<a class="float-right" href="#">Save Sequence</a>
+				<a class="float-right" id="play-sequence">Play Sequence</a>
 				<div id="focus-option" class="float-right">
 					<p class="float-left">Focus:</p>
 					<select class="float-right">
@@ -57,6 +57,9 @@ $permission = $user['permission'];
 				<div class="build-title"><p>Your Sequence</p></div>
 				<div class="build-area" id="build-sequence"></div>
 			</div>
+			<div id="dialog" title="Dialog Title">
+        		<p>test</p>
+    		</div>
 		</div>
 	</div>
 </div>
