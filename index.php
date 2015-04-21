@@ -17,7 +17,7 @@
 			<p>Online yoga sequence builder.<br> 
 			Customize your yoga to fit your needs.</p>
 			<p>$10 a month. 30 day free trial.</p>
-			<p><a class="btn-medium btn-blue" href="new.php">Get Started Now</a></p>
+			<p><a class="btn-medium btn-blue" href="users/new.php">Get Started Now</a></p>
 		</div>
 	</div>
 
@@ -31,8 +31,16 @@
 		<p>Learn how to do postures correctly.</p>
 		<p>Practice meditation through guided instruction.</p>
 		<p>and many, many more.</p>
-		<img class="right" src="css/yoga-builder.png">
+		<img class="right" src="images/ipad-imac.png">
+	</div>
 
+	<div id="join-today">
+		<div id="join-today-p">
+			<p class="white">Become a YogaVibe member today.</p>
+			<p class="blue">TRY IT OUT FOR FREE.</p>
+			<p class="black">Get access to online yoga classes. Build your own practice. Watch live classes on your schedule.</p>
+			<p><a class="btn-medium btn-blue" href="users/new.php">Sign Up Today!</a></p>
+		</div>
 	</div>
 
 </div>

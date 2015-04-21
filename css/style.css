@@ -37,10 +37,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 h1{
-	font-family:proximanova-regular;
+	font-family:proximanova-light;
 	text-align: center;
 	font-size:40px;
-	color:#82bfce;
+	color:#fff;
 }
 
 h2{
@@ -136,8 +136,8 @@ form{
 
 .right{
 	float:right;
-	margin:-190px 70px 0 0;
-	width: 650px;
+	margin:-200px 70px 0 0;
+	width: 600px;
 }
 
 .display-none {
@@ -364,7 +364,6 @@ form{
 #welcome{
 	width:100%;
 	height:100%;
-	float:left;
 }
 
 #get-started{
@@ -384,7 +383,8 @@ form{
 }
 
 #about-section{
-	background-color:#fff;
+	padding-top: 50px;
+	background-color:#82bfce;
 	width:100%;
 	height:100vh;
 	float:left;
@@ -392,7 +392,8 @@ form{
 
 #about-section p{
 	font-size: 20px;
-	color:#82bfce;
+	line-height: 40px;
+	color:#fff;
 	font-family: arial;
 	padding:10px 0 0 80px;
 	position:relative;
@@ -404,6 +405,44 @@ form{
 	font-size: 14px;
 	color:#82bfce;
 	font-family: arial;
+}
+
+#join-today{
+	width:100%;
+	height:100%;
+	vertical-align: middle;
+	float:left;
+	background-image: url("/images/join-today.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+
+#join-today-p {
+	width: 500px;
+	height: 300px;
+	margin-right: 200px;
+	margin-top: 80px;
+	text-align: center;
+	font-family: proximanova-light;
+	float: right;
+}
+
+.white{
+	font-size: 30px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.blue{
+	font-size: 20px;
+	color:#82bfce;
+	margin-bottom: 10px;
+}
+
+.black{
+	font-size: 20px;
+	margin-bottom: 50px;
 }
 
 #error-box{
@@ -503,14 +542,6 @@ form{
 
 #schedule-container{
 	margin-bottom: 100px;
-}
-
-
-h1 {
-	font-family: arial;
-	color: #686868;
-	float: left;
-	line-height: 24px
 }
 
 #event-header{

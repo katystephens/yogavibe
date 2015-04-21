@@ -1,9 +1,3 @@
-console.log("hello");
-
-// var standing = "/images/standing";
-// var ground = "/images/ground"
-// var fileextension = ".JPG";
-
 var standing = [];
 var ground = [];
 var sequence = [];
@@ -30,31 +24,3 @@ $(document).ready(function() {
       }
 });
 
-
-// $.ajax({
-//     //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-//     url: standing,
-//     success: function (data) {
-//         //Lsit all png file names in the page
-//         $(data).find("a:contains(" + fileextension + ")").each(function () {
-//             var filename = this.href.replace(window.location.host, "");
-//             $("#build-standing").append("<img src=" + standing + filename + " width=" + "200" + "></img>");
-//         });
-//     }
-// });
-
-
-// function validateName(x) {
-// 	alert(document.getElementById(x).value);
-// }
-
-
-// $(function($) {
-
-// 	$('#custom-classes').click(function ()
-// 	{
-// 		customClasses();
-// 	});
-
-
-// });
