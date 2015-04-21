@@ -21,7 +21,7 @@ if(!isset($_SESSION['user_id']))
 	<script type="text/javascript" src="/javascript/jquery.js"></script>
 	<script type="text/javascript" src="/javascript/yogavibe.js"></script>
 	<script type="text/javascript" src="/javascript/schedule.js"></script>
-	<link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="css/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/css/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/css/favicon.ico" type="image/x-icon">
 </head>
 <body class="<?= $logout ?>">

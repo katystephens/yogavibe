@@ -35,7 +35,14 @@ if ($row) {
 
 
 <?php else: ?>
-<h1>Invalid email address and/or password.</h1>
+		<div id="error-box">
+		<center>
+			<ul>
+				<li>Invalid email address and/or password.</li>
+			</ul>
+		</center>
+	</div>
+	<?php require_once('new.php'); ?>
 <?php endif ?>
 
 
