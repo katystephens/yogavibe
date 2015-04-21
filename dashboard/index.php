@@ -48,6 +48,17 @@ $permission = $user['permission'];
 						<option value="three-advanced">3 advanced</option>
 					</select>
 				</div>
+
+				<div id="videos">
+					<div id="video-holder">
+						<video width="300" controls>
+						  <source src="/videos/warrior-series(full).mp4" type="video/mp4">
+						  <source src="/videos/warrior-series(full).ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>
+						<!-- <embed src="/videos/warrior-series(full).mp4" width="325" height="230" allowfullscreen="true" /> -->
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

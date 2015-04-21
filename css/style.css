@@ -521,7 +521,11 @@ form{
 }
 
 
-
+#video-holder{
+	position:absolute;
+	float:left;
+	margin-top:50px;
+}
 
 
 
