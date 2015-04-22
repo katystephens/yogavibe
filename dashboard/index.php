@@ -17,7 +17,7 @@ $permission = $user['permission'];
 		<div id="side-nav">
 			<div class="nav-items active"><img src="/css/home-icon.png"><a href="/dashboard/index.php">HOME</a><br></div>
 			<div class="nav-items"><img src="/css/saved-icon.png"><a href="/dashboard/saved.php">SAVED</a><br></div>
-			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/settings.php">SETTINGS</a></div>
+			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/#">SETTINGS</a></div>
 		</div>
 
 		<div id="main-container3">
@@ -30,7 +30,7 @@ $permission = $user['permission'];
 			<div id="class-options">
 				<div id="duration-option" class="float-left">
 					<p class="float-left">Duration:</p>
-					<select class="float-right">
+					<select class="float-right classLength">
 						<option value="five">5</option>
 						<option value="ten">10</option>
 						<option value="twenty">20</option>
@@ -42,7 +42,7 @@ $permission = $user['permission'];
 				</div>
 				<div id="level-option" class="float-left">
 					<p class="float-left">Level:</p>
-					<select class="float-right">
+					<select class="float-right classLevel">
 						<option value="one-beginner">1 beginner</option>
 						<option value="two-intermediate">2 intermediate</option>
 						<option value="three-advanced">3 advanced</option>
@@ -50,14 +50,16 @@ $permission = $user['permission'];
 				</div>
 
 				<div id="videos">
-					<div id="video-holder">
-						<video width="300" controls>
-						  <source src="/videos/warrior-series(full).mp4" type="video/mp4">
-						  <source src="/videos/warrior-series(full).ogg" type="video/ogg">
-						  Your browser does not support HTML5 video.
-						</video>
-						<!-- <embed src="/videos/warrior-series(full).mp4" width="325" height="230" allowfullscreen="true" /> -->
-					</div>
+					<div id="five" class="video-holder" style="display:none"></div>
+					<div id="ten" class="video-holder" style="display:none"></div>
+					<div id="twenty" class="video-holder" style="display:none"></div>
+					<div id="thirty" class="video-holder" style="display:none">Hello</div>
+					<div id="fourty-five" class="video-holder" style="display:none"></div>
+					<div id="sixty" class="video-holder" style="display:none"></div>
+					<div id="thirty" class="video-holder" style="display:none"></div>
+					<div id="one-beginner" class="video-holder" style="display:none"></div>
+					<div id="two-intermediate" class="video-holder" style="display:none">Hello</div>
+					<div id="three-advanced" class="video-holder" style="display:none"></div>
 				</div>
 			</div>
 		</div>

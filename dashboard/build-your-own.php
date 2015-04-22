@@ -17,7 +17,7 @@ $permission = $user['permission'];
 		<div id="side-nav">
 			<div class="nav-items active"><img src="/css/home-icon.png"><a href="/dashboard/index.php">HOME</a><br></div>
 			<div class="nav-items"><img src="/css/saved-icon.png"><a href="/dashboard/saved.php">SAVED</a><br></div>
-			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/settings.php">SETTINGS</a></div>
+			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/#">SETTINGS</a></div>
 		</div>
 
 		<div id="main-container3">
@@ -44,7 +44,9 @@ $permission = $user['permission'];
 				<div id="duration-option" class="float-right">
 					<p class="float-left">Duration:&nbsp; 0:00</p>
 				</div>
+				<div class="float-left blue"><p>Select the poses below to add them to the timeline.<p></div>
 			</div>
+			<!-- <div class="explanation"><p>Select the poses below to add them to the timeline.<p></div> -->
 			<div class="all-build">
 				<div class="build-title"><p>Standing</p></div>
 				<div class="build-area" id="build-standing"></div>
@@ -54,12 +56,12 @@ $permission = $user['permission'];
 				<div class="build-area" id="build-ground"></div>
 			</div>
 			<div class="all-build add-space">
-				<div class="build-title"><p>Your Sequence</p></div>
+				<div class="build-title special"><p>Your Sequence</p></div>
 				<div class="build-area" id="build-sequence"></div>
 			</div>
-			<div id="dialog" title="Dialog Title">
+<!-- 			<div id="dialog" title="Dialog Title">
         		<p>test</p>
-    		</div>
+    		</div> -->
 		</div>
 	</div>
 </div>

@@ -21,8 +21,6 @@
 		</div>
 	</div>
 
-	<div style="clear:both"></div>
-
 	<div id="about-section">
 		<h1>What can you do with YogaVibe?</h1>
 		<p>Customize and build your own yoga sequences.</p>
@@ -38,7 +36,7 @@
 		<div id="join-today-p">
 			<p class="white">Become a YogaVibe member today.</p>
 			<p class="blue">TRY IT OUT FOR FREE.</p>
-			<p class="black">Get access to online yoga classes. Build your own practice. Watch live classes on your schedule.</p>
+			<p class="gray">Get access to online yoga classes. Build your own practice. Watch live classes on your schedule.</p>
 			<p><a class="btn-medium btn-blue" href="users/new.php">Sign Up Today!</a></p>
 		</div>
 	</div>

@@ -10,7 +10,7 @@
 		<div id="side-nav">
 			<div class="nav-items active"><img src="/css/home-icon.png"><a href="/dashboard/index.php">HOME</a><br></div>
 			<div class="nav-items"><img src="/css/saved-icon.png"><a href="/dashboard/saved.php">SAVED</a><br></div>
-			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/settings.php">SETTINGS</a></div>
+			<div class="nav-items"><img src="/css/settings-icon.png"><a href="/dashboard/#">SETTINGS</a></div>
 		</div>
 
 		<div id="main-container3">
