@@ -6,13 +6,13 @@ var sixty = [];
 var beginner = [];
 var currSelection;
 
-for (var i = 0; i < 14; i++) {
-	var filename = "<img src=/images/standing/standing" + i + ".jpg" + " width=" + "196" + " class=" + "thumbnails" + " onclick=" + "buildSequence(event);" + ">";
+for (var i = 0; i < 15; i++) {
+	var filename = "<img src=/images/_standing/standing" + i + ".jpg" + " class=" + "thumbnails" + " onclick=" + "buildSequence(event);" + ">";
 	standing.push(filename);
 }
 
-for (var i = 0; i < 136; i++) {
-	var filename = "<img src=/images/ground/ground" + i + ".jpg" + " width=" + "196" + " class=" + "thumbnails" + " onclick=" + "buildSequence(event);" + ">";
+for (var i = 0; i < 137; i++) {
+	var filename = "<img src=/images/_ground/ground" + i + ".jpg" + " class=" + "thumbnails" + " onclick=" + "buildSequence(event);" + ">";
 	ground.push(filename);
 }
 
@@ -67,8 +67,43 @@ $(document).ready(function() {
       }
 
       playSequence = function (evt) {
+            $.each(sequence, function(i, val) {
+                  var newStr = val.attr('src').replace(/((_ground)|(_standing))/i, "large-images");
+                  val.attr('src', newStr);
+                  val.removeClass("thumbnails");
+                  val.addClass("large-thumbnails");
+            });
+
+            sequence[0].addClass('active');
+
+            var timer = function (curImage) {
+                  if (sequence.length > curImage)
+                  {
+                        sequence[curImage].removeClass('active');
+                        sequence[curImage + 1].addClass('active');
+                        setTimeout(function() {
+                              timer(curImage+1)
+                        }, 3000);
+                  }
+            }
+
+
+            setTimeout(function() {
+                  timer(0);
+            }, 3000);
+
+            $("#dialog").show();
+            $("#front-dialog").html('')
+            $("#front-dialog").append(sequence);
+
+            var close = $('#dialog');
+
+            close.bind('click', function(e)
+            {
+                  $(e.target).hide()
+            });
+
             var el = $(evt.target);
-            console.log('hello');
       }
 });
 
